@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/goals_and_navigation/goals_and_navigation.egg-info/PKG-INFO
+../../build/goals_and_navigation/goals_and_navigation.egg-info/SOURCES.txt
+../../build/goals_and_navigation/goals_and_navigation.egg-info/dependency_links.txt
+../../build/goals_and_navigation/goals_and_navigation.egg-info/entry_points.txt
+../../build/goals_and_navigation/goals_and_navigation.egg-info/requires.txt
+../../build/goals_and_navigation/goals_and_navigation.egg-info/top_level.txt
+../../build/goals_and_navigation/goals_and_navigation.egg-info/zip-safe
+goals_and_navigation/__init__.py
+goals_and_navigation/cone_detection.py
+resource/goals_and_navigation
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

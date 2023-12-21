@@ -1,0 +1,50 @@
+[0.848s] Invoking command in '/home/trsa2024/ros2_lab3/src/goals_and_navigation': PYTHONPATH=/home/trsa2024/ros2_lab3/build/goals_and_navigation/prefix_override:/home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/goals_and_navigation build --build-base /home/trsa2024/ros2_lab3/build/goals_and_navigation/build install --record /home/trsa2024/ros2_lab3/build/goals_and_navigation/install.log --single-version-externally-managed
+[1.097s] running egg_info
+[1.097s] creating ../../build/goals_and_navigation/goals_and_navigation.egg-info
+[1.119s] writing ../../build/goals_and_navigation/goals_and_navigation.egg-info/PKG-INFO
+[1.120s] writing dependency_links to ../../build/goals_and_navigation/goals_and_navigation.egg-info/dependency_links.txt
+[1.120s] writing entry points to ../../build/goals_and_navigation/goals_and_navigation.egg-info/entry_points.txt
+[1.120s] writing requirements to ../../build/goals_and_navigation/goals_and_navigation.egg-info/requires.txt
+[1.120s] writing top-level names to ../../build/goals_and_navigation/goals_and_navigation.egg-info/top_level.txt
+[1.120s] writing manifest file '../../build/goals_and_navigation/goals_and_navigation.egg-info/SOURCES.txt'
+[1.141s] reading manifest file '../../build/goals_and_navigation/goals_and_navigation.egg-info/SOURCES.txt'
+[1.142s] writing manifest file '../../build/goals_and_navigation/goals_and_navigation.egg-info/SOURCES.txt'
+[1.143s] running build
+[1.143s] running build_py
+[1.143s] creating /home/trsa2024/ros2_lab3/build/goals_and_navigation/build
+[1.144s] creating /home/trsa2024/ros2_lab3/build/goals_and_navigation/build/lib
+[1.144s] creating /home/trsa2024/ros2_lab3/build/goals_and_navigation/build/lib/goals_and_navigation
+[1.144s] copying goals_and_navigation/__init__.py -> /home/trsa2024/ros2_lab3/build/goals_and_navigation/build/lib/goals_and_navigation
+[1.145s] copying goals_and_navigation/cone_detection.py -> /home/trsa2024/ros2_lab3/build/goals_and_navigation/build/lib/goals_and_navigation
+[1.145s] running install
+[1.153s] /home/trsa2024/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[1.153s] !!
+[1.153s] 
+[1.153s]         ********************************************************************************
+[1.153s]         Please avoid running ``setup.py`` directly.
+[1.153s]         Instead, use pypa/build, pypa/installer or other
+[1.153s]         standards-based tools.
+[1.153s] 
+[1.153s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[1.153s]         ********************************************************************************
+[1.153s] 
+[1.153s] !!
+[1.153s]   self.initialize_options()
+[1.159s] running install_lib
+[1.171s] creating /home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/python3.10/site-packages/goals_and_navigation
+[1.171s] copying /home/trsa2024/ros2_lab3/build/goals_and_navigation/build/lib/goals_and_navigation/__init__.py -> /home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/python3.10/site-packages/goals_and_navigation
+[1.171s] copying /home/trsa2024/ros2_lab3/build/goals_and_navigation/build/lib/goals_and_navigation/cone_detection.py -> /home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/python3.10/site-packages/goals_and_navigation
+[1.172s] byte-compiling /home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/python3.10/site-packages/goals_and_navigation/__init__.py to __init__.cpython-310.pyc
+[1.173s] byte-compiling /home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/python3.10/site-packages/goals_and_navigation/cone_detection.py to cone_detection.cpython-310.pyc
+[1.175s] running install_data
+[1.200s] creating /home/trsa2024/ros2_lab3/install/goals_and_navigation/share/ament_index
+[1.201s] creating /home/trsa2024/ros2_lab3/install/goals_and_navigation/share/ament_index/resource_index
+[1.201s] creating /home/trsa2024/ros2_lab3/install/goals_and_navigation/share/ament_index/resource_index/packages
+[1.201s] copying resource/goals_and_navigation -> /home/trsa2024/ros2_lab3/install/goals_and_navigation/share/ament_index/resource_index/packages
+[1.205s] copying package.xml -> /home/trsa2024/ros2_lab3/install/goals_and_navigation/share/goals_and_navigation
+[1.205s] running install_egg_info
+[1.221s] Copying ../../build/goals_and_navigation/goals_and_navigation.egg-info to /home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/python3.10/site-packages/goals_and_navigation-0.0.0-py3.10.egg-info
+[1.222s] running install_scripts
+[1.373s] Installing detection script to /home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/goals_and_navigation
+[1.373s] writing list of installed files to '/home/trsa2024/ros2_lab3/build/goals_and_navigation/install.log'
+[1.415s] Invoked command in '/home/trsa2024/ros2_lab3/src/goals_and_navigation' returned '0': PYTHONPATH=/home/trsa2024/ros2_lab3/build/goals_and_navigation/prefix_override:/home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/goals_and_navigation build --build-base /home/trsa2024/ros2_lab3/build/goals_and_navigation/build install --record /home/trsa2024/ros2_lab3/build/goals_and_navigation/install.log --single-version-externally-managed

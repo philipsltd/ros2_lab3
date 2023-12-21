@@ -1,0 +1,2 @@
+[console_scripts]
+detection = goals_and_navigation.cone_detection:main

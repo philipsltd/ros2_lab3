@@ -1,0 +1,10 @@
+/home/trsa2024/ros2_lab3/build/lab3_pkg/CMakeFiles/uninstall.dir
+/home/trsa2024/ros2_lab3/build/lab3_pkg/CMakeFiles/lab3_pkg_uninstall.dir
+/home/trsa2024/ros2_lab3/build/lab3_pkg/CMakeFiles/nav2_my_detection_plugin.dir
+/home/trsa2024/ros2_lab3/build/lab3_pkg/CMakeFiles/test.dir
+/home/trsa2024/ros2_lab3/build/lab3_pkg/CMakeFiles/edit_cache.dir
+/home/trsa2024/ros2_lab3/build/lab3_pkg/CMakeFiles/rebuild_cache.dir
+/home/trsa2024/ros2_lab3/build/lab3_pkg/CMakeFiles/list_install_components.dir
+/home/trsa2024/ros2_lab3/build/lab3_pkg/CMakeFiles/install.dir
+/home/trsa2024/ros2_lab3/build/lab3_pkg/CMakeFiles/install/local.dir
+/home/trsa2024/ros2_lab3/build/lab3_pkg/CMakeFiles/install/strip.dir
