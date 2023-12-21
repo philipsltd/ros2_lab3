@@ -54,7 +54,6 @@ class ConeDetectionNode(Node):
 
         # Draw the new bounding box
         print("Area " + str(new_w*new_h))
-        # cv2.rectangle(cones_image, (new_x, new_y), (new_x + new_w, new_y + new_h), (0, 0, 255), 2)
         # Publish to detect copy for bt
         if new_area != 0:
             msg = Bool()
@@ -122,34 +121,6 @@ class ConeDetectionNode(Node):
                 cones_coordinates.append((x, y, w, h))
 
         return image, cones_coordinates
-        # # Convert image to HSV color space
-        # hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
-
-        # # Define lower and upper bounds for orange color in HSV
-        # lower_orange = np.array([0, 100, 100])
-        # upper_orange = np.array([20, 255, 255])
-
-        # # Create masks for orange and white regions
-        # mask_orange = cv2.inRange(hsv, lower_orange, upper_orange)
-
-        # # Combine masks to get the striped pattern
-        # mask_striped = cv2.bitwise_or(mask_orange, mask_orange)  # Placeholder, replace with actual logic
-
-        # # Apply edge detection to the combined mask
-        # edges = cv2.Canny(mask_striped, 50, 150)
-
-        # # Detect lines using Hough Line Transform
-        # lines = cv2.HoughLinesP(edges, 1, np.pi / 180, threshold=50, minLineLength=50, maxLineGap=10)
-
-        # # Extract coordinates of lines detected
-        # striped_coordinates = []
-        # if lines is not None:
-        #     for line in lines:
-        #         x1, y1, x2, y2 = line[0]
-        #         striped_coordinates.append((min(x1, x2), min(y1, y2), abs(x2 - x1), abs(y2 - y1)))
-
-        # return image, striped_coordinates
-
 
 def main(args=None):
     print("SpInInG the nodeeeee woooo")
