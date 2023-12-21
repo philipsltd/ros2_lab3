@@ -1,0 +1,34 @@
+running egg_info
+writing ../../build/goals_and_navigation/goals_and_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/goals_and_navigation/goals_and_navigation.egg-info/dependency_links.txt
+writing entry points to ../../build/goals_and_navigation/goals_and_navigation.egg-info/entry_points.txt
+writing requirements to ../../build/goals_and_navigation/goals_and_navigation.egg-info/requires.txt
+writing top-level names to ../../build/goals_and_navigation/goals_and_navigation.egg-info/top_level.txt
+reading manifest file '../../build/goals_and_navigation/goals_and_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/goals_and_navigation/goals_and_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+copying goals_and_navigation/cone_detection.py -> /home/trsa2024/ros2_lab3/build/goals_and_navigation/build/lib/goals_and_navigation
+running install
+/home/trsa2024/.local/lib/python3.10/site-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running install_lib
+running install_data
+copying package.xml -> /home/trsa2024/ros2_lab3/install/goals_and_navigation/share/goals_and_navigation
+running install_egg_info
+removing '/home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/python3.10/site-packages/goals_and_navigation-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/goals_and_navigation/goals_and_navigation.egg-info to /home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/python3.10/site-packages/goals_and_navigation-0.0.0-py3.10.egg-info
+running install_scripts
+Installing detection script to /home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/goals_and_navigation
+writing list of installed files to '/home/trsa2024/ros2_lab3/build/goals_and_navigation/install.log'

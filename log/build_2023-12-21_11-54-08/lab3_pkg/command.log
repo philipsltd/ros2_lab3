@@ -1,0 +1,4 @@
+Invoking command in '/home/trsa2024/ros2_lab3/build/lab3_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/trsa2024/ros2_lab3/build/lab3_pkg -- -j4 -l4
+Invoked command in '/home/trsa2024/ros2_lab3/build/lab3_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/trsa2024/ros2_lab3/build/lab3_pkg -- -j4 -l4
+Invoking command in '/home/trsa2024/ros2_lab3/build/lab3_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/trsa2024/ros2_lab3/build/lab3_pkg
+Invoked command in '/home/trsa2024/ros2_lab3/build/lab3_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/trsa2024/ros2_lab3/build/lab3_pkg

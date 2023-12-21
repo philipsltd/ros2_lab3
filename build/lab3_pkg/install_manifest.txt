@@ -1,5 +1,4 @@
 /home/trsa2024/ros2_lab3/install/lab3_pkg/lib/libnav2_my_detection_plugin.so
-/home/trsa2024/ros2_lab3/install/lab3_pkg/include//lab3_pkg/DetectConeOld.hpp
 /home/trsa2024/ros2_lab3/install/lab3_pkg/include//lab3_pkg/DetectCone.hpp
 /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/environment/library_path.sh
 /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/environment/library_path.dsv

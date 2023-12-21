@@ -7,7 +7,6 @@ import cv2
 import numpy as np
 from std_msgs.msg import Bool
 
-
 class ConeDetectionNode(Node):
     def __init__(self):
         super().__init__('cone_detection_node')
@@ -123,7 +122,7 @@ class ConeDetectionNode(Node):
         return image, cones_coordinates
 
 def main(args=None):
-    print("SpInInG the nodeeeee woooo")
+    print("Spinning")
     rclpy.init(args=args)
     node = ConeDetectionNode()
     rclpy.spin(node)
