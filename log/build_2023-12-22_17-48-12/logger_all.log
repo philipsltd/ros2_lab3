@@ -1,0 +1,288 @@
+[0.948s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.949s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f7ea1bb41f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f7ea1d6bca0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f7ea1d6bca0>>)
+[1.007s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.008s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.008s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.008s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.008s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.008s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.008s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/trsa2024/ros2_lab3'
+[1.008s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.009s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.023s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.023s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.023s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.023s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.023s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extensions ['ignore', 'ignore_ament_install']
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extension 'ignore'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extension 'ignore_ament_install'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extensions ['colcon_pkg']
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extension 'colcon_pkg'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extensions ['colcon_meta']
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extension 'colcon_meta'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extensions ['ros']
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extension 'ros'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extensions ['cmake', 'python']
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extension 'cmake'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extension 'python'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extensions ['python_setup_py']
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(bt) by extension 'python_setup_py'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.024s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['ignore', 'ignore_ament_install']
+[1.025s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'ignore'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'ignore_ament_install'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['colcon_pkg']
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'colcon_pkg'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['colcon_meta']
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'colcon_meta'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['ros']
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'ros'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['cmake', 'python']
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'cmake'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'python'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extensions ['python_setup_py']
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(map) by extension 'python_setup_py'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.026s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src/goals_and_navigation) by extensions ['ignore', 'ignore_ament_install']
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src/goals_and_navigation) by extension 'ignore'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src/goals_and_navigation) by extension 'ignore_ament_install'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src/goals_and_navigation) by extensions ['colcon_pkg']
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src/goals_and_navigation) by extension 'colcon_pkg'
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src/goals_and_navigation) by extensions ['colcon_meta']
+[1.027s] Level 1:colcon.colcon_core.package_identification:_identify(src/goals_and_navigation) by extension 'colcon_meta'
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(src/goals_and_navigation) by extensions ['ros']
+[1.028s] Level 1:colcon.colcon_core.package_identification:_identify(src/goals_and_navigation) by extension 'ros'
+[1.030s] DEBUG:colcon.colcon_core.package_identification:Package 'src/goals_and_navigation' with type 'ros.ament_python' and name 'goals_and_navigation'
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab3_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab3_pkg) by extension 'ignore'
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab3_pkg) by extension 'ignore_ament_install'
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab3_pkg) by extensions ['colcon_pkg']
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab3_pkg) by extension 'colcon_pkg'
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab3_pkg) by extensions ['colcon_meta']
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab3_pkg) by extension 'colcon_meta'
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab3_pkg) by extensions ['ros']
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab3_pkg) by extension 'ros'
+[1.032s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab3_pkg' with type 'ros.ament_cmake' and name 'lab3_pkg'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/sam_bot_description) by extensions ['ignore', 'ignore_ament_install']
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/sam_bot_description) by extension 'ignore'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/sam_bot_description) by extension 'ignore_ament_install'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/sam_bot_description) by extensions ['colcon_pkg']
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/sam_bot_description) by extension 'colcon_pkg'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/sam_bot_description) by extensions ['colcon_meta']
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/sam_bot_description) by extension 'colcon_meta'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/sam_bot_description) by extensions ['ros']
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(src/sam_bot_description) by extension 'ros'
+[1.033s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sam_bot_description' with type 'ros.ament_cmake' and name 'sam_bot_description'
+[1.033s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.033s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.033s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.033s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.033s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.119s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.148s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 400 installed packages in /opt/ros/humble
+[1.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.231s] Level 5:colcon.colcon_core.verb:set package 'goals_and_navigation' build argument 'cmake_args' from command line to 'None'
+[1.231s] Level 5:colcon.colcon_core.verb:set package 'goals_and_navigation' build argument 'cmake_target' from command line to 'None'
+[1.231s] Level 5:colcon.colcon_core.verb:set package 'goals_and_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.231s] Level 5:colcon.colcon_core.verb:set package 'goals_and_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[1.231s] Level 5:colcon.colcon_core.verb:set package 'goals_and_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[1.231s] Level 5:colcon.colcon_core.verb:set package 'goals_and_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[1.231s] Level 5:colcon.colcon_core.verb:set package 'goals_and_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[1.231s] Level 5:colcon.colcon_core.verb:set package 'goals_and_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[1.232s] Level 5:colcon.colcon_core.verb:set package 'goals_and_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.232s] DEBUG:colcon.colcon_core.verb:Building package 'goals_and_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/trsa2024/ros2_lab3/build/goals_and_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/trsa2024/ros2_lab3/install/goals_and_navigation', 'merge_install': False, 'path': '/home/trsa2024/ros2_lab3/src/goals_and_navigation', 'symlink_install': False, 'test_result_base': None}
+[1.244s] Level 5:colcon.colcon_core.verb:set package 'lab3_pkg' build argument 'cmake_args' from command line to 'None'
+[1.244s] Level 5:colcon.colcon_core.verb:set package 'lab3_pkg' build argument 'cmake_target' from command line to 'None'
+[1.244s] Level 5:colcon.colcon_core.verb:set package 'lab3_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.244s] Level 5:colcon.colcon_core.verb:set package 'lab3_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'lab3_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'lab3_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'lab3_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'lab3_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'lab3_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.245s] DEBUG:colcon.colcon_core.verb:Building package 'lab3_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/trsa2024/ros2_lab3/build/lab3_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/trsa2024/ros2_lab3/install/lab3_pkg', 'merge_install': False, 'path': '/home/trsa2024/ros2_lab3/src/lab3_pkg', 'symlink_install': False, 'test_result_base': None}
+[1.257s] Level 5:colcon.colcon_core.verb:set package 'sam_bot_description' build argument 'cmake_args' from command line to 'None'
+[1.258s] Level 5:colcon.colcon_core.verb:set package 'sam_bot_description' build argument 'cmake_target' from command line to 'None'
+[1.258s] Level 5:colcon.colcon_core.verb:set package 'sam_bot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.258s] Level 5:colcon.colcon_core.verb:set package 'sam_bot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.258s] Level 5:colcon.colcon_core.verb:set package 'sam_bot_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.258s] Level 5:colcon.colcon_core.verb:set package 'sam_bot_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.258s] Level 5:colcon.colcon_core.verb:set package 'sam_bot_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.258s] Level 5:colcon.colcon_core.verb:set package 'sam_bot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.258s] Level 5:colcon.colcon_core.verb:set package 'sam_bot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.258s] DEBUG:colcon.colcon_core.verb:Building package 'sam_bot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/trsa2024/ros2_lab3/build/sam_bot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/trsa2024/ros2_lab3/install/sam_bot_description', 'merge_install': False, 'path': '/home/trsa2024/ros2_lab3/src/sam_bot_description', 'symlink_install': False, 'test_result_base': None}
+[1.273s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.286s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.287s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/trsa2024/ros2_lab3/src/goals_and_navigation' with build type 'ament_python'
+[1.287s] Level 1:colcon.colcon_core.shell:create_environment_hook('goals_and_navigation', 'ament_prefix_path')
+[1.316s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/goals_and_navigation/share/goals_and_navigation/hook/ament_prefix_path.ps1'
+[1.317s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trsa2024/ros2_lab3/install/goals_and_navigation/share/goals_and_navigation/hook/ament_prefix_path.dsv'
+[1.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/goals_and_navigation/share/goals_and_navigation/hook/ament_prefix_path.sh'
+[1.332s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.332s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.362s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/trsa2024/ros2_lab3/src/lab3_pkg' with build type 'ament_cmake'
+[1.363s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/trsa2024/ros2_lab3/src/lab3_pkg'
+[1.378s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.378s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.413s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/trsa2024/ros2_lab3/src/sam_bot_description' with build type 'ament_cmake'
+[1.413s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/trsa2024/ros2_lab3/src/sam_bot_description'
+[1.430s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.430s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.671s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/trsa2024/ros2_lab3/src/goals_and_navigation'
+[1.687s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.687s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/trsa2024/ros2_lab3/build/lab3_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/trsa2024/ros2_lab3/build/lab3_pkg -- -j4 -l4
+[1.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/trsa2024/ros2_lab3/build/sam_bot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/trsa2024/ros2_lab3/build/sam_bot_description -- -j4 -l4
+[1.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/trsa2024/ros2_lab3/build/sam_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/trsa2024/ros2_lab3/build/sam_bot_description -- -j4 -l4
+[1.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/trsa2024/ros2_lab3/build/sam_bot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/trsa2024/ros2_lab3/build/sam_bot_description
+[1.839s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/trsa2024/ros2_lab3/build/lab3_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/trsa2024/ros2_lab3/build/lab3_pkg -- -j4 -l4
+[1.848s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sam_bot_description)
+[1.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/trsa2024/ros2_lab3/build/sam_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/trsa2024/ros2_lab3/build/sam_bot_description
+[1.867s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/sam_bot_description' for CMake module files
+[1.868s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/sam_bot_description' for CMake config files
+[1.868s] Level 1:colcon.colcon_core.shell:create_environment_hook('sam_bot_description', 'cmake_prefix_path')
+[1.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/hook/cmake_prefix_path.ps1'
+[1.885s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/hook/cmake_prefix_path.dsv'
+[1.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/hook/cmake_prefix_path.sh'
+[1.886s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/sam_bot_description/bin'
+[1.886s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/sam_bot_description/lib/pkgconfig/sam_bot_description.pc'
+[1.887s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/sam_bot_description/lib/python3.10/site-packages'
+[1.887s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/sam_bot_description/bin'
+[1.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/package.ps1'
+[1.904s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/package.dsv'
+[1.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/package.sh'
+[1.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/package.bash'
+[1.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/package.zsh'
+[1.907s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/trsa2024/ros2_lab3/install/sam_bot_description/share/colcon-core/packages/sam_bot_description)
+[1.909s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/trsa2024/ros2_lab3/build/lab3_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/trsa2024/ros2_lab3/build/lab3_pkg
+[1.931s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab3_pkg)
+[1.936s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/trsa2024/ros2_lab3/build/lab3_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/trsa2024/ros2_lab3/build/lab3_pkg
+[1.946s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg' for CMake module files
+[1.946s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg' for CMake config files
+[1.947s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab3_pkg', 'cmake_prefix_path')
+[1.962s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/hook/cmake_prefix_path.ps1'
+[1.962s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/hook/cmake_prefix_path.dsv'
+[1.963s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/hook/cmake_prefix_path.sh'
+[1.963s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg/lib'
+[1.963s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab3_pkg', 'ld_library_path_lib')
+[1.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/hook/ld_library_path_lib.ps1'
+[1.977s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/hook/ld_library_path_lib.dsv'
+[1.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/hook/ld_library_path_lib.sh'
+[1.978s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg/bin'
+[1.978s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg/lib/pkgconfig/lab3_pkg.pc'
+[1.978s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg/lib/python3.10/site-packages'
+[1.978s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg/bin'
+[1.995s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/package.ps1'
+[1.997s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/package.dsv'
+[1.997s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/package.sh'
+[1.998s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/package.bash'
+[1.998s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/package.zsh'
+[1.999s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/trsa2024/ros2_lab3/install/lab3_pkg/share/colcon-core/packages/lab3_pkg)
+[2.018s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sam_bot_description)
+[2.032s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/sam_bot_description' for CMake module files
+[2.032s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/sam_bot_description' for CMake config files
+[2.033s] Level 1:colcon.colcon_core.shell:create_environment_hook('sam_bot_description', 'cmake_prefix_path')
+[2.046s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/hook/cmake_prefix_path.ps1'
+[2.046s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/hook/cmake_prefix_path.dsv'
+[2.047s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/hook/cmake_prefix_path.sh'
+[2.048s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/sam_bot_description/bin'
+[2.048s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/sam_bot_description/lib/pkgconfig/sam_bot_description.pc'
+[2.048s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/sam_bot_description/lib/python3.10/site-packages'
+[2.048s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/sam_bot_description/bin'
+[2.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/package.ps1'
+[2.063s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/package.dsv'
+[2.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/package.sh'
+[2.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/package.bash'
+[2.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/sam_bot_description/share/sam_bot_description/package.zsh'
+[2.065s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/trsa2024/ros2_lab3/install/sam_bot_description/share/colcon-core/packages/sam_bot_description)
+[2.080s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab3_pkg)
+[2.093s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg' for CMake module files
+[2.094s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg' for CMake config files
+[2.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab3_pkg', 'cmake_prefix_path')
+[2.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/hook/cmake_prefix_path.ps1'
+[2.107s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/hook/cmake_prefix_path.dsv'
+[2.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/hook/cmake_prefix_path.sh'
+[2.108s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg/lib'
+[2.109s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab3_pkg', 'ld_library_path_lib')
+[2.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/hook/ld_library_path_lib.ps1'
+[2.122s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/hook/ld_library_path_lib.dsv'
+[2.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/hook/ld_library_path_lib.sh'
+[2.123s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg/bin'
+[2.123s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg/lib/pkgconfig/lab3_pkg.pc'
+[2.123s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg/lib/python3.10/site-packages'
+[2.123s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/lab3_pkg/bin'
+[2.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/package.ps1'
+[2.137s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/package.dsv'
+[2.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/package.sh'
+[2.138s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/package.bash'
+[2.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/package.zsh'
+[2.139s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/trsa2024/ros2_lab3/install/lab3_pkg/share/colcon-core/packages/lab3_pkg)
+[2.235s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/trsa2024/ros2_lab3/src/goals_and_navigation': PYTHONPATH=/home/trsa2024/ros2_lab3/build/goals_and_navigation/prefix_override:/home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/goals_and_navigation build --build-base /home/trsa2024/ros2_lab3/build/goals_and_navigation/build install --record /home/trsa2024/ros2_lab3/build/goals_and_navigation/install.log --single-version-externally-managed
+[2.696s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/trsa2024/ros2_lab3/src/goals_and_navigation' returned '0': PYTHONPATH=/home/trsa2024/ros2_lab3/build/goals_and_navigation/prefix_override:/home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/goals_and_navigation build --build-base /home/trsa2024/ros2_lab3/build/goals_and_navigation/build install --record /home/trsa2024/ros2_lab3/build/goals_and_navigation/install.log --single-version-externally-managed
+[2.711s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/goals_and_navigation' for CMake module files
+[2.711s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/goals_and_navigation' for CMake config files
+[2.712s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/goals_and_navigation/lib'
+[2.712s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/goals_and_navigation/bin'
+[2.712s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/pkgconfig/goals_and_navigation.pc'
+[2.712s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/goals_and_navigation/lib/python3.10/site-packages'
+[2.712s] Level 1:colcon.colcon_core.shell:create_environment_hook('goals_and_navigation', 'pythonpath')
+[2.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/goals_and_navigation/share/goals_and_navigation/hook/pythonpath.ps1'
+[2.729s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/trsa2024/ros2_lab3/install/goals_and_navigation/share/goals_and_navigation/hook/pythonpath.dsv'
+[2.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/trsa2024/ros2_lab3/install/goals_and_navigation/share/goals_and_navigation/hook/pythonpath.sh'
+[2.731s] Level 1:colcon.colcon_core.environment:checking '/home/trsa2024/ros2_lab3/install/goals_and_navigation/bin'
+[2.731s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(goals_and_navigation)
+[2.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/goals_and_navigation/share/goals_and_navigation/package.ps1'
+[2.754s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/trsa2024/ros2_lab3/install/goals_and_navigation/share/goals_and_navigation/package.dsv'
+[2.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/goals_and_navigation/share/goals_and_navigation/package.sh'
+[2.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/goals_and_navigation/share/goals_and_navigation/package.bash'
+[2.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/trsa2024/ros2_lab3/install/goals_and_navigation/share/goals_and_navigation/package.zsh'
+[2.757s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/trsa2024/ros2_lab3/install/goals_and_navigation/share/colcon-core/packages/goals_and_navigation)
+[2.757s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.758s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.759s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.759s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.777s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.777s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.777s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.789s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.803s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/trsa2024/ros2_lab3/install/local_setup.ps1'
+[2.804s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/trsa2024/ros2_lab3/install/_local_setup_util_ps1.py'
+[2.805s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/trsa2024/ros2_lab3/install/setup.ps1'
+[2.820s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/trsa2024/ros2_lab3/install/local_setup.sh'
+[2.821s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/trsa2024/ros2_lab3/install/_local_setup_util_sh.py'
+[2.821s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/trsa2024/ros2_lab3/install/setup.sh'
+[2.835s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/trsa2024/ros2_lab3/install/local_setup.bash'
+[2.836s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/trsa2024/ros2_lab3/install/setup.bash'
+[2.850s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/trsa2024/ros2_lab3/install/local_setup.zsh'
+[2.850s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/trsa2024/ros2_lab3/install/setup.zsh'

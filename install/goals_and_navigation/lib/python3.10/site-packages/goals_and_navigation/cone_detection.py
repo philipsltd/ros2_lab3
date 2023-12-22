@@ -12,7 +12,7 @@ class ConeDetectionNode(Node):
         super().__init__('cone_detection_node')
         self.subscription = self.create_subscription(
             Image,
-            '/depth_camera/image_raw',  # Camera topic
+            '/intel_realsense_r200_depth/image_raw',  # Camera topic
             self.image_callback,
             10)
         self.subscription  # Prevent unused variable warning
