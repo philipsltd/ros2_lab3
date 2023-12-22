@@ -1,94 +1,132 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from std_msgs.msg import Bool
+from std_msgs.msg import Int32, String
 from cv_bridge import CvBridge
 import cv2
 import numpy as np
+from std_msgs.msg import Bool
 
-class TrafficConeDetector(Node):
+class ConeDetectionNode(Node):
     def __init__(self):
         super().__init__('cone_detection_node')
-        self.camera_subscriber = self.create_subscription(
+        self.subscription = self.create_subscription(
             Image,
-            '/intel_realsense_r200_depth/image_raw',  # Camera feed topic
-            self.process_image,
+            '/depth_camera/image_raw',  # Camera topic
+            self.image_callback,
             10)
-        self.detection_publisher = self.create_publisher(
+        self.subscription  # Prevent unused variable warning
+        self.publisher = self.create_publisher(
             Bool, 
             '/bt_detect', 
             10)
-        self.image_converter = CvBridge()
+        self.bridge = CvBridge()
 
-    def process_image(self, img_msg):
+    def image_callback(self, msg):
         try:
-            current_image = self.image_converter.imgmsg_to_cv2(img_msg, "bgr8")
+            # Convert ROS Image message to OpenCV image
+            cvImage = self.bridge.imgmsg_to_cv2(msg, "bgr8")
         except Exception as e:
-            self.get_logger().info(f'Exception: {str(e)}')
+            self.get_logger().info(str(e))
             return
 
-        processed_image, detected_cones = self.find_cones(current_image)
-        largest_cone, smallest_cone = self.identify_cone_sizes(detected_cones)
+        # Detect striped pattern on cones
+        conesImage, stripedCoordinates = self.detectStripedCones(cvImage)
 
-        # Draw bounding box and label
-        self.draw_label(processed_image, largest_cone, smallest_cone)
+        # Find the biggest and smallest rectangles
+        biggestRect, smallestRect = self.findBiggestSmallestRectangles(stripedCoordinates)
 
-        # Display updated image
-        cv2.imshow("Cone Detection", processed_image)
+        # Calculate the dimensions for the new bounding box
+        xBig, yBig, wBig, hBig = biggestRect
+        xSmall, ySmall, wSmall, hSmall = smallestRect
+        newX = xBig
+        newY = yBig + hBig - hSmall
+        newW = wBig
+        newH = ySmall + hSmall - yBig
+
+        newArea = newW * newH
+        # if newArea >= 4000 or newArea <= -4000 :
+            # Draw the new bounding box
+        cv2.rectangle(conesImage, (newX, newY), ( newX + newW, newY + newH ), (0, 0, 255), 2)
+
+        # Draw the new bounding box
+        print("Area " + str(newW*newH))
+        # Publish to detect copy for bt
+        if newArea != 0:
+            msg = Bool()
+            msg.data = True  # Assign the integer value to the message's data field
+            self.publisher.publish(msg)
+        else:
+            msg = Bool()
+            msg.data = False  # Assign the integer value to the message's data field
+            self.publisher.publish(msg)
+
+        # Display the image with the new bounding box
+        cv2.imshow("Detection", conesImage)
         cv2.waitKey(1)
 
-    def identify_cone_sizes(self, cone_coords):
-        max_size, min_size = 0, float('inf')
-        largest, smallest = None, None
+    def findBiggestSmallestRectangles(self, stripedCoordinates):
+        biggestArea = 0
+        smallestArea = float('inf')
+        biggestRect = None
+        smallestRect = None
 
-        for coords in cone_coords:
-            x, y, w, h = coords
-            size = w * h
+        for rect in stripedCoordinates:
+            x, y, w, h = rect
+            area = w * h
 
-            if size > max_size:
-                max_size = size
-                largest = coords
+            if area > biggestArea:
+                biggestArea = area
+                biggestRect = rect
+            if area < smallestArea:
+                smallestArea = area
+                smallestRect = rect
 
-            if size < min_size:
-                min_size = size
-                smallest = coords
+        return biggestRect or (0, 0, 0, 0), smallestRect or (0, 0, 0, 0)
 
-        return largest or (0, 0, 0, 0), smallest or (0, 0, 0, 0)
 
-    def find_cones(self, img):
-        hsv_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-        orange_range = np.array([0, 180, 0]), np.array([12, 245, 255])
-        mask = cv2.inRange(hsv_img, *orange_range)
+    def detectStripedCones(self, image):
+        # Convert image to HSV color space for better color segmentation
+        hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
+        # Define the lower and upper bounds for orange color in HSV
+        lowerOrange = np.array([0, 180, 0])
+        upperOrange = np.array([12, 245, 255]) # 12 > 15 > 18
+
+        # Create a mask using the orange color range
+        mask = cv2.inRange(hsv, lowerOrange, upperOrange)
+
+        # Apply morphological operations to clean up the mask
         kernel = np.ones((5, 5), np.uint8)
         mask = cv2.erode(mask, kernel, iterations=1)
         mask = cv2.dilate(mask, kernel, iterations=1)
 
+        # Find contours of objects in the mask
         contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        cone_coords = [(x, y, w, h) for x, y, w, h in [cv2.boundingRect(c) for c in contours] if cv2.contourArea(c) > 100]
 
-        return img, cone_coords
+        # Initialize list to store cone coordinates
+        conesCoordinates = []
 
-    def draw_label(self, img, large_cone, small_cone):
-        x_big, y_big, w_big, h_big = large_cone
-        x_small, y_small, w_small, h_small = small_cone
-        x, y, w, h = x_big, y_big + h_big - h_small, w_big, y_small + h_small - y_big
+        # Loop through detected contours
+        for contour in contours:
+            # Get bounding box of each contour
+            x, y, w, h = cv2.boundingRect(contour)
+            
+            # Add only contours with a certain area (adjust threshold as needed)
+            minContourArea = 100
+            if cv2.contourArea(contour) > minContourArea:
+                conesCoordinates.append((x, y, w, h))
 
-        if w * h != 0:
-            cv2.rectangle(img, (x, y), (x + w, y + h), (0, 0, 255), 2)
-            label_pos = (x, y - 10)
-            cv2.putText(img, 'Traffic Cone', label_pos, cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
-            self.detection_publisher.publish(Bool(data=True))
-        else:
-            self.detection_publisher.publish(Bool(data=False))
+        return image, conesCoordinates
 
-def main():
-    print("Starting Traffic Cone Detection Node")
-    rclpy.init()
-    detector = TrafficConeDetector()
-    rclpy.spin(detector)
-    detector.destroy_node()
+def main(args=None):
+    print("Spinning")
+    rclpy.init(args=args)
+    node = ConeDetectionNode()
+    rclpy.spin(node)
+    node.destroy_node()
     rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

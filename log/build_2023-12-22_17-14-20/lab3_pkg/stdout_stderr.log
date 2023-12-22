@@ -1,0 +1,25 @@
+[100%] Built target nav2_my_detection_plugin
+-- Install configuration: ""
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/lib/libnav2_my_detection_plugin.so
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/include/
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/include//lab3_pkg
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/include//lab3_pkg/DetectCone.hpp
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/environment/library_path.sh
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/environment/library_path.dsv
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/ament_index/resource_index/package_run_dependencies/lab3_pkg
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/ament_index/resource_index/parent_prefix_path/lab3_pkg
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/environment/path.sh
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/environment/path.dsv
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/local_setup.bash
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/local_setup.sh
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/local_setup.zsh
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/local_setup.dsv
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/package.dsv
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/ament_index/resource_index/packages/lab3_pkg
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/cmake/lab3_pkgConfig.cmake
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/cmake/lab3_pkgConfig-version.cmake
+-- Up-to-date: /home/trsa2024/ros2_lab3/install/lab3_pkg/share/lab3_pkg/package.xml
